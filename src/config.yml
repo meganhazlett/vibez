@@ -1,0 +1,42 @@
+  
+data_to_s3:
+  file_name : 'data/Hot 100 Audio Features.xlsx' #file to upload 
+  bucket : 'vibez-s3' #my bucket 
+  s3_path : 'Hot_100_Audio_Features.xlsx' #what its called in S3
+
+
+acquire_data: 
+  file_name: 'Hot_100_Audio_Features.xlsx'
+  bucket: 'vibez-s3'
+  localfilepath: 'data/Hot 100 Audio Features.xlsx'
+
+
+models: 
+  hot_100_data : "data/Hot 100 Audio Features.xlsx" 
+  ideal_clusters_plot : "data/model_results/ideal_clusters_plot.png"
+  final_model_path : "data/model_results/final_model.pkl"
+
+  cluster_centers : "data/model_results/cluster_centers.csv"
+  cluster_labels : "data/model_results/cluster_labels.csv"
+  cluster_ssw : "data/model_results/cluster_ssw.txt"
+  cluster_counts : "data/model_results/cluster_counts.csv"
+
+  cluster_attributes : "data/model_results/cluster_attributes.csv"
+  labeled_clusters: "data/Hot_100_Labeled_Clusters.csv" 
+
+
+configure_db: 
+  sqlite:
+    SQLITELOCALENGINE: "sqlite:///data/hot100.db"
+  
+  rds:
+    MYSQL_USER: ""
+    MYSQL_PASSWORD: ""
+    MYSQL_HOST: ""
+    MYSQL_PORT: ""
+    MYSQL_DB: "vibez_db"
+    MYSQL_SQLTYPE: "mysql+pymysql"
+
+
+
+

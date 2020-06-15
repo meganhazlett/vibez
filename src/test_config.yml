@@ -1,0 +1,22 @@
+models: 
+  zscore_sample : "data/test/z_sample.csv"
+  ideal_clusters_plot: 'data/test/model_results/ideal_cluster_plot_test.png'
+  zscore_sample_unhappy : "data/test/zscore_sample_unhappy.csv"
+
+  final_model_path : "data/test/model_results/final_model_test.pkl"
+  final_model_test_path : "data/test/test_my_solution.pkl"
+
+  cluster_centers : "data/test/model_results/cluster_centers_test.csv"
+  labels_test : 'data/test/labels_test.csv'
+  labels_test_unhappy : 'data/test/labels_test_unhappy.csv'
+  cluster_labels : "data/test/model_results/cluster_labels_test.csv"
+  cluster_ssw : "data/test/model_results/cluster_ssw_test.txt"
+  cluster_counts : "data/test/model_results/cluster_counts_test.csv"
+
+  cluster_attributes : "data/test/model_results/cluster_attributes_test.csv"
+  labeled_clusters: "data/test/Hot_100_Labeled_Clusters_test_results.csv" 
+  labeled_clusters_test: 'data/test/Hot_100_Labeled_Clusters_test.csv'
+
+
+
+
