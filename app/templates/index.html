@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/basic.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 style="text-align:center;"> Vibez</h1>
+  <img src="https://github.com/meganhazlett/reflections/blob/master/music.png?raw=true" alt="Design-url" height="70" width="1400">
+  <!-- <img src="music.png" alt="Design" height="70" width="1400"> -->
+  <h3 style="text-align:center;"> The app that genreates a playlist to match the vibe</h3>
+  <h4 style="text-align:center;"> An app by Megan Hazlett </h4>
+  <hr>
+  <h3 style="text-align:center;">Choose a vibe number from the following list</h3>
+
+<p style="text-align:center;">
+  <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+  <tr>
+    <th>Number</th>
+    <th>Vibe</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Chill Kickback</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Day Drinking</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Bro, I'm Sad</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Sing Along </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Concert Pregame</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Who Tryin' Drink</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Let's Dance</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Long Talks and Beach Walks</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Song You Forgot About</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>In My Feels</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Time Machine</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Nostalgia</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>College Tailgate</td>
+  </tr>
+  </table>
+</body>
+<form action="{{ url_for('get_playlist') }}" method=post class=get_playlist>
+      <dl style="text-align:center;">
+        <input type=text size=20 name=VibeNumber placeholder="Enter a Vibe Number">
+        <input type=submit value=GetPlaylist>
+      </dl>
+    </form>
+</html>
