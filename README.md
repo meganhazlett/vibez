@@ -92,8 +92,8 @@ MYSQL_DB=vibez_db
 ### Export environment variables 
 
 ```bash
-export AWS_ACCESS_KEY_ID=AKIAJIGPWF37T7RHJOLQ
-export AWS_SECRET_ACCESS_KEY=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
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
 ```
 ### Build the image 
 
